@@ -1,0 +1,121 @@
+:root {
+  --navy: #0a1a2f;
+  --gold: #ffcc33;
+  --white: #ffffff;
+}
+
+/* Services Section */
+.services {
+  width: 100%;
+  background: #0f1d33;
+  text-align: center;
+  color: var(--white);
+  position: relative;
+  overflow: hidden;
+  padding-top: 60px;
+  padding-bottom: 100px;
+
+  /* Updated SEO-Friendly Fonts */
+  font-family: 'Roboto', sans-serif;
+}
+
+.services-title {
+  font-family: 'Montserrat', sans-serif;
+  font-size: 42px;
+  font-weight: 800;
+  margin-bottom: 15px;
+  color: var(--gold);
+  text-shadow: 0 0 10px rgba(255, 204, 51, 0.4);
+}
+
+.services-subtext {
+  font-size: 18px;
+  opacity: 0.85;
+  margin-bottom: 50px;
+  max-width: 650px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+/* Grid Layout */
+.service-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+  gap: 25px;
+  justify-items: center;
+}
+
+/* Service Card */
+.service-card {
+  background: linear-gradient(135deg, #112240, #0a1a2f);
+  border: 1px solid rgba(255, 204, 51, 0.2);
+  border-radius: 16px;
+  padding: 35px 25px;
+  box-shadow: 0 0 20px rgba(255, 204, 51, 0.1);
+  transition: all 0.4s ease;
+  position: relative;
+  overflow: hidden;
+  cursor: pointer;
+
+  /* Avoid CLS (Stable height) */
+  min-height: 300px;
+
+  /* Let grid handle sizing properly */
+  max-width: 340px;
+}
+
+/* Hover Effect */
+.service-card:hover {
+  transform: translateY(-10px) scale(1.03);
+  box-shadow: 0 0 35px rgba(255, 204, 51, 0.5);
+  border-color: var(--gold);
+}
+
+/* Icons */
+.service-icon {
+  font-size: 50px;
+  color: var(--gold);
+  margin-bottom: 20px;
+  filter: drop-shadow(0 0 12px rgba(255, 204, 51, 0.5));
+}
+
+.service-card h3 {
+  font-family: 'Montserrat', sans-serif;
+  font-size: 24px;
+  color: var(--gold);
+  margin-bottom: 12px;
+}
+
+.service-card p {
+  font-size: 15px;
+  opacity: 0.9;
+  line-height: 1.6;
+}
+
+/* Fade Animation */
+@keyframes fadeUp {
+  0% {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* Mobile */
+@media (max-width: 600px) {
+  .services {
+    padding: 70px 25px;
+  }
+
+  .services-title {
+    font-size: 32px;
+  }
+
+  .service-card {
+    padding: 28px;
+    min-height: 260px;
+  }
+}
