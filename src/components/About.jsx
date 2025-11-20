@@ -3,38 +3,48 @@ import "./About.css";
 
 export default function About() {
   return (
-    <section id="about" className="about">
+    <section id="about" className="about" aria-labelledby="about-title">
       <div className="about-container">
 
-        <h2 className="about-title">About ElevateDev</h2>
+        {/* SEO-Optimized H2 */}
+        <h2 id="about-title" className="about-title">
+          About ElevateDev – Digital Services & Web Solutions in India
+        </h2>
 
+        {/* SEO-Rich Tagline */}
         <p className="about-tagline">
-          Empowering businesses with modern design, high-performance development,
-          and strategic digital solutions tailored for growth.
+          ElevateDev empowers businesses across India with modern web design,
+          high-performance web development, branding, and strategic digital solutions
+          tailored for growth.
         </p>
 
+        {/* Keyword-Enhanced Description */}
         <p className="about-description">
-          ElevateDev specializes in helping brands grow through innovation,
-          creativity, and intelligent technology. We build fast, scalable websites,
-          strong brand identities, and result-driven marketing campaigns that help
-          businesses thrive in the digital world.
+          ElevateDev specializes in helping brands grow through innovation, creativity,
+          and intelligent technology. We build fast, scalable websites, strong brand
+          identities, social media campaigns, and result-driven digital marketing
+          strategies that help businesses thrive online.
         </p>
 
-        <h3 className="about-subtitle">Industries We Support</h3>
+        {/* SEO-Friendly Subtitle */}
+        <h3 className="about-subtitle">
+          Industries We Serve Across India
+        </h3>
 
         <div className="industry-grid">
-          <div className="industry-card">🏥 Doctors & Healthcare</div>
-          <div className="industry-card">🏗️ Builders & Construction</div>
-          <div className="industry-card">🏫 Schools & Institutions</div>
-          <div className="industry-card">🏬 Retail & Local Businesses</div>
-          <div className="industry-card">🏢 Financial Firms & Institutes</div>
-          <div className="industry-card">🏛️ Government & Gram Panchayats</div>
-          <div className="industry-card">🍽️ Restaurants & Cafes</div>
-          <div className="industry-card">✨ Many Other Businesses</div>
+          <div className="industry-card" aria-label="Doctors & Healthcare">🏥 Doctors & Healthcare</div>
+          <div className="industry-card" aria-label="Builders & Construction">🏗️ Builders & Construction</div>
+          <div className="industry-card" aria-label="Schools & Institutions">🏫 Schools & Institutions</div>
+          <div className="industry-card" aria-label="Retail & Local Businesses">🏬 Retail & Local Businesses</div>
+          <div className="industry-card" aria-label="Financial Firms & Institutes">🏢 Financial Firms & Institutes</div>
+          <div className="industry-card" aria-label="Government & Gram Panchayats">🏛️ Government & Gram Panchayats</div>
+          <div className="industry-card" aria-label="Restaurants & Cafes">🍽️ Restaurants & Cafes</div>
+          <div className="industry-card" aria-label="Other Businesses">✨ Many Other Businesses</div>
         </div>
 
         <p className="about-end">
-          No matter the industry — ElevateDev delivers digital excellence designed for real impact.
+          No matter the industry — ElevateDev delivers professional digital services,
+          web development, and marketing solutions designed for real business impact in India.
         </p>
 
       </div>
