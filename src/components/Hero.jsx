@@ -6,30 +6,31 @@ export default function Hero() {
   return (
     <section className="hero">
       <div className="hero-content">
-        {/* SEO-Optimized H1 */}
+
+        {/* Main H1 — Excellent for SEO */}
         <h1 className="hero-title">
-          Creative Design & Technology Solutions That <span>Elevate Your Brand</span>
+          Creative Web Development & Digital Solutions That{" "}
+          <span>Elevate Your Brand</span>
         </h1>
 
-        {/* SEO-Enhanced Intro Paragraph */}
+        {/* SEO Rich Paragraph */}
         <p className="hero-subtext">
-          At ElevateDev, we specialize in creative design, web development,
-          branding, UI/UX, and custom digital solutions. We combine innovation,
-          strategy, and cutting-edge technology to build strong online identities
-          and help businesses achieve real growth.
+          ElevateDev provides professional web development, social media marketing,
+          branding, UI/UX, and software development services across India. We help
+          businesses grow through modern digital solutions, clean designs, and high-performance websites.
         </p>
 
-        {/* Bonus Keyword Line (Improves SEO Relevance) */}
+        {/* Extra keyword sentence for ranking */}
         <p className="hero-keywords">
-          Web Development • Branding • UI/UX • Digital Marketing • Software Development
+          Web Development • Software Development • Digital Marketing • UI/UX • Branding
         </p>
 
         <div className="hero-buttons">
           <a
             href="#services"
             className="btn-primary"
-            title="View ElevateDev Services"
-            aria-label="View ElevateDev Services"
+            title="Explore Web Development & Digital Services by ElevateDev"
+            aria-label="Explore ElevateDev services section"
           >
             Explore Services
           </a>
@@ -37,7 +38,7 @@ export default function Hero() {
           <a
             href="#contact"
             className="btn-secondary"
-            title="Contact ElevateDev"
+            title="Contact ElevateDev for Digital Services"
             aria-label="Contact ElevateDev"
           >
             Contact Us
@@ -46,12 +47,12 @@ export default function Hero() {
       </div>
 
       <div className="hero-image">
-        {/* Better alt + CLS-safe width & height */}
         <img
           src={heroImg}
-          alt="ElevateDev creative design and development illustration"
+          alt="ElevateDev digital services illustration including web development and design"
           width="500"
           height="500"
+          loading="lazy"     // SEO + speed improvement
         />
       </div>
     </section>
