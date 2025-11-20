@@ -9,55 +9,59 @@ export default function Services() {
       className="services"
       aria-labelledby="services-title"
     >
+      {/* SEO-Optimized H2 */}
       <h2 id="services-title" className="services-title">
-        Our Premium Services
+        ElevateDev Premium Digital Services
       </h2>
 
+      {/* SEO-Rich Subtext */}
       <p className="services-subtext">
-        We provide high-end digital solutions crafted to elevate your business
-        and brand.
+        ElevateDev provides professional web development, social media marketing,
+        software development, and creative design services across India. Our solutions
+        help businesses grow online and build strong digital brands.
       </p>
 
       <div className="service-grid">
         {/* Web Development */}
-        <div className="service-card" aria-label="Web Development Service">
+        <div className="service-card" aria-label="Web Development Service in India">
           <FaLaptopCode className="service-icon" aria-hidden="true" />
           <h3>Web Development</h3>
           <p>
-            Fast, responsive, and visually stunning websites built using the
-            latest technologies for peak performance and user experience.
+            Fast, responsive, and visually stunning websites built with modern
+            technologies. ElevateDev ensures optimal user experience, mobile
+            responsiveness, and SEO-friendly designs for businesses in India.
           </p>
         </div>
 
         {/* Social Media Marketing */}
-        <div className="service-card">
-          <FaBullhorn className="service-icon" />
+        <div className="service-card" aria-label="Social Media Marketing Service in India">
+          <FaBullhorn className="service-icon" aria-hidden="true" />
           <h3>Social Media Marketing</h3>
           <p>
-            Effective marketing strategies that help your brand reach the right
-            audience through Meta Ads, Google Ads, and organic social media
-            campaigns. We focus on increasing engagement, visibility, and
-            conversions to strengthen your online presence.
+            Strategic marketing campaigns on Facebook, Instagram, and Google Ads
+            that increase engagement, visibility, and conversions. ElevateDev
+            helps your brand reach the right audience in India effectively.
           </p>
         </div>
 
         {/* Software Development */}
-        <div className="service-card" aria-label="Software Development Service">
+        <div className="service-card" aria-label="Custom Software Development Service in India">
           <FaCogs className="service-icon" aria-hidden="true" />
           <h3>Software Development</h3>
           <p>
-            Custom, scalable software solutions designed to optimize workflow,
-            automate tasks, and improve overall business efficiency.
+            Custom, scalable software solutions to optimize workflow, automate
+            business tasks, and improve operational efficiency for Indian
+            businesses.
           </p>
         </div>
 
         {/* Logo Design */}
-        <div className="service-card" aria-label="Logo Design Service">
+        <div className="service-card" aria-label="Logo Design Service in India">
           <FaPaintBrush className="service-icon" aria-hidden="true" />
           <h3>Logo Design</h3>
           <p>
-            Professional and memorable logo designs that define your brand
-            identity while maintaining modern aesthetics and creativity.
+            Creative and memorable logos that define brand identity. ElevateDev
+            ensures modern aesthetics and professional design for businesses across India.
           </p>
         </div>
       </div>
